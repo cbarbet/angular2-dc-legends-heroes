@@ -11,8 +11,8 @@ export class Hero {
   int: number;
   hp: number;
   vit: number;
-  cct: number;
-  vct: number;
+  ctc: number;
+  ctv: number;
 }
 
 

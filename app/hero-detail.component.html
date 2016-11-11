@@ -1,11 +1,49 @@
 <div *ngIf="hero">
   <h2>{{hero.name}} details!</h2>
-  <div>
-    <label>id: </label>{{hero.id}}</div>
-  <div>
-    <label>name: </label>
+    <div>
+    <label>Name: </label>
     <input [(ngModel)]="hero.name" placeholder="name" />
   </div>
+  <div>
+    <label>id: </label>{{hero.id}}
+  </div>
+  <div>
+    <label>Type: </label>{{hero.type}}
+  </div>
+  <div>
+    <label>Level: </label>{{hero.level}}
+  </div>
+  <div>
+    <label>Rank: </label>{{hero.rank}}
+  </div>
+  <div>
+    <label>Power: </label>{{hero.pwr}}
+  </div>
+  <div>
+    <label>Strenght: </label>{{hero.str}}
+  </div>
+  <div>
+    <label>Agility: </label>{{hero.agi}}
+  </div>
+  <div>
+    <label>Endurance: </label>{{hero.end}}
+  </div>
+  <div>
+    <label>Intelligence: </label>{{hero.int}}
+  </div>
+  <div>
+    <label>Heal points: </label>{{hero.hp}}
+  </div>
+  <div>
+    <label>Vitality: </label>{{hero.vit}}
+  </div>
+  <div>
+    <label>Critical average: </label>{{hero.ctc}}
+  </div>
+  <div>
+    <label>Critical value: </label>{{hero.ctv}}
+  </div>
+
   <button (click)="goBack()">Back</button>
 </div>
 
