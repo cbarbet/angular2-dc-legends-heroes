@@ -1,6 +1,14 @@
 export class Hero {
   id: number;
   name: string;
+  str: number;
+  agi: number;
+  end: number;
+  int: number;
+  hp: number;
+  vit: number;
+  cct: number;
+  vct: number;
 }
 
 
