@@ -1,6 +1,10 @@
 export class Hero {
   id: number;
   name: string;
+  type: string;
+  level: number;
+  rank: number;
+  pwr: number;
   str: number;
   agi: number;
   end: number;
