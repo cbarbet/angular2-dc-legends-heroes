@@ -2,7 +2,9 @@
   <h2>{{hero.name}} details!</h2>
     <div>
     <label>Name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
+    <md-input #characterCountHint [(ngModel)]="hero.name" placeholder="Name">
+    <md-hint align="end">{{characterCountHint.characterCount}} / 100</md-hint>
+    </md-input>
   </div>
   <div>
     <label>id: </label>{{hero.id}}
@@ -44,7 +46,7 @@
     <label>Critical value: </label>{{hero.ctv}}
   </div>
 
-  <button (click)="goBack()">Back</button>
+  <button md-raised-button (click)="goBack()">Back</button>
 </div>
 
 <!-- 

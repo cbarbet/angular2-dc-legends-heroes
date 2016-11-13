@@ -1,35 +1,42 @@
-h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
+/* Navigation link styles */
+
+nav {
+  background-color: transparent;
 }
-h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
-}
+
 nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
+  min-width: 200px;
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+  position: relative;
+  padding-bottom: 3px;
+  font-size: 150%;
+  color: #444;
+  text-decoration: none;
+  text-align: center;
+  
 }
-nav a:visited, a:link {
-  color: #607D8B;
-}
+
 nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
+  color: #EF969A;
 }
+
+nav a:after {
+  
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+nav a:hover:after {
+
+  width: 100%;
+  background: #999;
+}
+
 nav a.active {
-  color: #039be5;
+  color: #999;
 }
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

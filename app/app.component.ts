@@ -4,17 +4,25 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'my-app',
   template: `
-    <h1>{{title}}</h1>
-    <nav>
-      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-    </nav>
+  <div>
+    <div class="banner">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="main">
+      <nav>
+        <a class="sliding-middle-out" routerLink="/dashboard" routerLinkActive="active">DASHBOARD</a>
+        <a routerLink="/heroes" routerLinkActive="active">HEROES</a>
+      </nav>
+    </div>
+    <div class="footer">
+      
+    </div>
     <router-outlet></router-outlet>
   `,
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'DC Legends Heroes';
 }
 
 

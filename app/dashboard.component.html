@@ -1,11 +1,13 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <div *ngFor="let hero of heroes" (click)="gotoDetail(hero)" class="col-1-4">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
-    </div>
+<div>
+    <md-grid-list cols="4" class="grid" >
+      <md-grid-tile *ngFor="let hero of heroes" (click)="gotoDetail(hero)" >
+        <md-card class="module">
+          <h4>{{hero.name}}</h4>
+          <label>{{hero.pwr}}</label>
+        </md-card>
+      </md-grid-tile>
+    </md-grid-list>
   </div>
-</div>
 
 
 <!-- 
