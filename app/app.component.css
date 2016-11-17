@@ -1,19 +1,26 @@
 /* Navigation link styles */
 
+.title {
+  font-size: 150%;
+  color: #eee;
+  background-color: #2E3032;
+  font-style: italic;
+  padding: 27px 48px 26px 28px;
+}
+
 nav {
-  background-color: transparent;
+  text-align: center;
+  background-color: #1D1E1F;
+  display: inline-flex;
+  width: 100%;
 }
 
 nav a {
+  font-size: 140%;
   min-width: 200px;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 3px;
-  font-size: 150%;
   color: #444;
   text-decoration: none;
-  text-align: center;
-  
+  margin-top: auto;
 }
 
 nav a:hover {
@@ -21,18 +28,16 @@ nav a:hover {
 }
 
 nav a:after {
-  
   content: '';
   display: block;
   margin: auto;
-  height: 3px;
+  height: 4px;
   width: 0px;
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
 
 nav a:hover:after {
-
   width: 100%;
   background: #999;
 }

@@ -8,11 +8,16 @@ h2 {
 	text-align: center;
 }
 
+img{
+	max-width: 220px;
+}
 .grid {
-	background-color: #2e3032
+	background-color: #fff;
+	height: 100%;
 }
 
-.module {
+.card-hero {
+	margin:auto;
 	text-align: center;
 	min-width: 240px;
 	min-height: 240px;
@@ -23,7 +28,7 @@ h2 {
 	border-radius: 6px;
 }
 
-.module:hover {
+.card-hero:hover {
 	cursor: pointer;
 	color: #EF969A;
 	background-color: #EEE;
@@ -31,7 +36,7 @@ h2 {
 }
 
 @media (max-width: 1024px) {
-	.module {}
+	.card-hero {}
 }
 
 

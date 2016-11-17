@@ -5,24 +5,19 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
   <div>
-    <div class="banner">
-      <h1>{{title}}</h1>
-    </div>
     <div class="main">
       <nav>
+        <div class="title"><span>{{title}}</span></div>
         <a class="sliding-middle-out" routerLink="/dashboard" routerLinkActive="active">DASHBOARD</a>
         <a routerLink="/heroes" routerLinkActive="active">HEROES</a>
       </nav>
     </div>
-    <div class="footer">
-      
-    </div>
-    <router-outlet></router-outlet>
+    <router-outlet ></router-outlet>
   `,
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  title = 'DC Legends Heroes';
+  title = 'DC LEGENDS HEROES';
 }
 
 
