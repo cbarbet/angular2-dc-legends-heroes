@@ -2,10 +2,17 @@
 
 .container-component {
   display: inline-flex;
+  width: 100%;
 }
 
 .container-overview {
+  margin:10px 0px 0px 20px;
   padding-left: 20px;
+  background-color: #ccc;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 6px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 h2 {
@@ -21,8 +28,9 @@ h2 {
 /* Classes for badges */
 
 .badge-hero {
-  margin: 14px 2px 14px 2px;
-  padding: 6px;
+  font-size: 120%;
+  margin: 14px 0px 14px 0px;
+  padding: 8px 6px 6px 16px;
   background-color: #ccc;
   min-width: 220px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

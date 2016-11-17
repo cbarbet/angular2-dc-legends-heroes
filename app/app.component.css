@@ -45,3 +45,12 @@ nav a:hover:after {
 nav a.active {
   color: #999;
 }
+
+nav a.active:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 4px;
+  width: 100%;
+  background: #999;
+}
