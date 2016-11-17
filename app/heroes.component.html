@@ -1,16 +1,14 @@
 <div class="container-component">
-  <div class="container-list">
-    <ul class="heroes">
-      <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-      </li>
-    </ul>
+  <div>
+  <md-card class="badge-hero" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+          <label>{{hero.name}}</label>
+  </md-card>
   </div>
 
   <div class="container-overview">
     <div *ngIf="selectedHero">
       <h2>
-        {{selectedHero.name | uppercase}} is my hero
+        {{selectedHero.name | uppercase}} is selected hero
       </h2>
       <button (click)="gotoDetail()">View Details</button>
     </div>

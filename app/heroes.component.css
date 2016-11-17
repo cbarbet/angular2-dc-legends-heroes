@@ -4,8 +4,6 @@
   display: inline-flex;
 }
 
-.container-list {}
-
 .container-overview {
   padding-left: 20px;
 }
@@ -19,54 +17,26 @@ h2 {
   color: white;
 }
 
-.heroes {
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 15em;
+
+/* Classes for badges */
+
+.badge-hero {
+  margin: 14px 2px 14px 2px;
+  padding: 6px;
+  background-color: #ccc;
+  min-width: 220px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  border-radius: 6px;
 }
 
-.heroes li {
+.badge-hero:hover {
   cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .25em 0;
-  height: 1.6em;
-  border-radius: 4px;
+	color: #EF969A;
+	background-color: #EEE;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.heroes li:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
-}
-
-.heroes li.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
-}
-
-.heroes .text {
-  position: relative;
-  top: -3px;
-}
-
-.heroes .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
-}
 
 button {
   font-family: Arial;
