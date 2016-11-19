@@ -4,10 +4,6 @@
 	box-sizing: border-box;
 }
 
-h2 {
-	text-align: center;
-}
-
 img {
 	max-width: 220px;
 }
@@ -37,8 +33,16 @@ img {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media (max-width: 1024px) {
-	.card-hero {}
+@media (max-width: 600px) {
+	.card-hero {
+		padding: 4px;
+		font-size: 10px;
+		min-height: 55px;
+		max-height: 75px
+	}
+	img {
+		max-width: 60px;
+	}
 }
 
 
